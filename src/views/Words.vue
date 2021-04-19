@@ -4,8 +4,8 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="n in 64"
-          :key="n"
+          v-for="word in words"
+          :key="word.id"
           cols="22"
           md="4"
         >
@@ -16,14 +16,12 @@
               @click="toggle"
             >
               <v-card-text>
-                <div>Word of the Day</div>
                 <p class="display-1 text--primary">
-                  el·ee·mos·y·nar·y
+                  {{word.title}}
                 </p>
-                <p>adjective</p>
+                <p>{{word.type}}</p>
                 <div class="text--primary">
-                  relating to or dependent on charity; charitable.<br>
-                  "an eleemosynary educational institution."
+                  {{word.description}}
                 </div>
               </v-card-text>
               <v-card-actions>
@@ -32,7 +30,7 @@
                   color="teal accent-4"
                   @click="reveal = true"
                 >
-                  Learn More
+                  Translation
                 </v-btn>
               </v-card-actions>
 
@@ -44,9 +42,10 @@
                 >
                   <v-card-text class="pb-0">
                     <p class="display-1 text--primary">
-                      Origin
+                      {{word.translation}}
                     </p>
-                    <p>late 16th century (as a noun denoting a place where alms were distributed): from medieval Latin eleemosynarius, from late Latin eleemosyna ‘alms’, from Greek eleēmosunē ‘compassion’ </p>
+                    <p> Русское описание, синонимы? </br>
+                     ну чего нить найду... </p>
                   </v-card-text>
                   <v-card-actions class="pt-0">
                     <v-btn
@@ -69,22 +68,84 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import Words from '@/components/Words.vue'
-
-export default {
-  name: 'Words',
-  components: {
-    // Words
-  }
-}
-</script>
-
-<script>
   export default {
-    data: () => ({
-      reveal: false,
-    }),
+    data: () => ({ 
+      drawer: null,
+      words: [
+        {
+          id: 1,
+          title: 'Kek',
+          type: 'Tech',
+          translation: 'Лол',
+          description: 'Суперсмешной такой вообще совсем очень кекнутный лол',
+          reveal: false,
+        },
+        {
+          id: 2,
+          title: 'Mek',
+          type: 'Common',
+          translation: 'Лол',
+          description: '',
+          reveal: false,
+        },
+        {
+          id: 3,
+          title: 'Lol',
+          type: 'Rare',
+          translation: 'Лол',
+          description: '',
+          reveal: false,
+        },
+        {
+          id: 4,
+          title: 'Kek',
+          type: 'Tech',
+          translation: 'Лол',
+          description: '',
+          reveal: false,
+        },
+        {
+          id: 5,
+          title: 'Mek',
+          type: 'Common',
+          translation: 'Лол',
+          description: '',
+          reveal: false,
+        },
+        {
+          id: 6,
+          title: 'Loh',
+          type: 'Rare',
+          translation: 'Лох',
+          description: 'Типичный чувачок с района',
+          reveal: false,
+        },
+        {
+          id: 7,
+          title: 'Keki',
+          type: 'Tech',
+          translation: 'Кеки',
+          description: 'Many keks',
+          reveal: false,
+        },
+        {
+          id: 8,
+          title: 'Meki',
+          type: 'Common',
+          translation: 'Меки',
+          description: '?????',
+          reveal: false,
+        },
+        {
+          id: 9,
+          title: 'Loli',
+          type: 'Rare',
+          translation: 'Лоли',
+          description: 'Не трожь!',
+          reveal: false,
+        },
+      ],
+    })
   }
 </script>
 
