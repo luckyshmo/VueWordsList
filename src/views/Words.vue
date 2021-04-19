@@ -38,7 +38,7 @@
                 <v-card
                   v-if="reveal"
                   class="transition-fast-in-fast-out v-card--reveal"
-                  style="height: 100%;"
+                  style="height: 100%; position: absolute"
                 >
                   <v-card-text class="pb-0">
                     <p class="display-1 text--primary">
@@ -52,6 +52,7 @@
                       text
                       color="teal accent-4"
                       @click="reveal = false"
+                      style="position: absolute; bottom: 0; margin-bottom: 4px"
                     >
                       Close
                     </v-btn>
@@ -70,6 +71,7 @@
 <script>
   export default {
     data: () => ({ 
+      reveal: false,
       drawer: null,
       words: [
         {
