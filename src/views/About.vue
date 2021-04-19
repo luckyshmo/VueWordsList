@@ -1,5 +1,65 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about pa-6 ma-2">
+    <h1>About app</h1>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
+    <p>This app purpuse is to get some English words from keep, trnsalte theme and make me learn them</p>
   </div>
 </template>
