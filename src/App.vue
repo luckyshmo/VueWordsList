@@ -60,7 +60,7 @@
 
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-app-bar-title>Words list</v-app-bar-title>
+      <v-app-bar-title><div>Words list</div></v-app-bar-title>
 
       <v-spacer></v-spacer>
 

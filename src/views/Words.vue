@@ -28,7 +28,7 @@
                 <v-btn
                   text
                   color="teal accent-4"
-                  @click="reveal = true"
+                  @click="word.reveal = true"
                 >
                   Translation
                 </v-btn>
@@ -36,7 +36,7 @@
 
               <v-expand-transition>
                 <v-card
-                  v-if="reveal"
+                  v-if="word.reveal"
                   class="transition-fast-in-fast-out v-card--reveal"
                   style="height: 100%; position: absolute"
                 >
@@ -44,14 +44,14 @@
                     <p class="display-1 text--primary">
                       {{word.translation}}
                     </p>
-                    <p> Русское описание, синонимы? </br>
+                    <p> Русское описание, синонимы? <br>
                      ну чего нить найду... </p>
                   </v-card-text>
                   <v-card-actions class="pt-0">
                     <v-btn
                       text
                       color="teal accent-4"
-                      @click="reveal = false"
+                      @click="word.reveal = false"
                       style="position: absolute; bottom: 0; margin-bottom: 4px"
                     >
                       Close
@@ -151,7 +151,7 @@
   }
 </script>
 
-<style>
+<style scope>
 .v-card--reveal {
   bottom: 0;
   opacity: 1 !important;
