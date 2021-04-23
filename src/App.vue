@@ -38,12 +38,6 @@
       </v-list>
     </v-navigation-drawer>
 
-    <!-- <v-app-bar app>
-      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-app-bar> -->
-
     <v-app-bar
       app
       color="primary"
@@ -93,7 +87,8 @@
     data: () => ({ 
       drawer: null,
       items: [
-        { title: 'Words', icon: 'mdi-message-text', to: '/'},
+        { title: 'Words', icon: 'mdi-bookshelf', to: '/'},
+        { title: 'Account', icon: 'mdi-account', to: '/account'},
         { title: 'About', icon: 'mdi-help-box', to: '/about'},
       ],
     }),
