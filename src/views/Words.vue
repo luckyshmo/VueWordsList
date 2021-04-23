@@ -4,61 +4,61 @@
     <v-container>
       <v-row>
         <v-col
-          v-for="word in words"
-          :key="word.id"
-          cols="22"
-          md="4"
+          v-for="card in cards"
+          :key="card.id"
+          cols=auto
+          md="3"
         >
-          <v-item v-slot="{ active, toggle }">
+          <v-item v-slot="{}">
             <v-card
               class="mx-auto"
-              :color="active ? 'primary' : ''"
-              @click="toggle"
+              @click="cardClick(card.id)"
             >
               <v-card-text>
                 <p class="display-1 text--primary">
-                  {{word.title}}
+                  {{card.title}}
                 </p>
-                <p>{{word.type}}</p>
+                <p>{{card.type}}</p>
                 <div class="text--primary">
-                  {{word.description}}
+                  {{card.description}}
                 </div>
               </v-card-text>
               <v-card-actions>
-                <v-btn
-                  text
-                  color="teal accent-4"
-                  @click="word.reveal = true"
+                <v-btn 
+                  icon
+                  v-on:click.stop
+                  @click="editCard(card.id)"
                 >
-                  Translation
+                  <v-icon color="primary lighten-2">mdi-pencil</v-icon>
+                </v-btn>
+                <v-btn 
+                  icon
+                  v-on:click.stop
+                  @click="deleteCard(card.id)"
+                >
+                  <v-icon color="primary lighten-2">mdi-delete</v-icon>
                 </v-btn>
               </v-card-actions>
 
               <v-expand-transition>
                 <v-card
-                  v-if="word.reveal"
+                  v-if="card.reveal"
                   class="transition-fast-in-fast-out v-card--reveal"
                   style="height: 100%; position: absolute"
                 >
                   <v-card-text class="pb-0">
                     <p class="display-1 text--primary">
-                      {{word.translation}}
+                      {{card.translation}}
                     </p>
                     <p> Русское описание, синонимы? <br>
                      ну чего нить найду... </p>
                   </v-card-text>
                   <v-card-actions class="pt-0">
-                    <v-btn
-                      text
-                      color="teal accent-4"
-                      @click="word.reveal = false"
-                      style="position: absolute; bottom: 0; margin-bottom: 4px"
-                    >
-                      Close
-                    </v-btn>
+                    <p>Some actions?</p>
                   </v-card-actions>
                 </v-card>
               </v-expand-transition>
+
             </v-card>
           </v-item>
         </v-col>
@@ -70,84 +70,103 @@
 
 <script>
   export default {
-    data: () => ({ 
-      reveal: false,
-      drawer: null,
-      words: [
-        {
-          id: 1,
-          title: 'Kek',
-          type: 'Tech',
-          translation: 'Лол',
-          description: 'Суперсмешной такой вообще совсем очень кекнутный лол',
-          reveal: false,
-        },
-        {
-          id: 2,
-          title: 'Mek',
-          type: 'Common',
-          translation: 'Лол',
-          description: '',
-          reveal: false,
-        },
-        {
-          id: 3,
-          title: 'Lol',
-          type: 'Rare',
-          translation: 'Лол',
-          description: '',
-          reveal: false,
-        },
-        {
-          id: 4,
-          title: 'Kek',
-          type: 'Tech',
-          translation: 'Лол',
-          description: '',
-          reveal: false,
-        },
-        {
-          id: 5,
-          title: 'Mek',
-          type: 'Common',
-          translation: 'Лол',
-          description: '',
-          reveal: false,
-        },
-        {
-          id: 6,
-          title: 'Loh',
-          type: 'Rare',
-          translation: 'Лох',
-          description: 'Типичный чувачок с района',
-          reveal: false,
-        },
-        {
-          id: 7,
-          title: 'Keki',
-          type: 'Tech',
-          translation: 'Кеки',
-          description: 'Many keks',
-          reveal: false,
-        },
-        {
-          id: 8,
-          title: 'Meki',
-          type: 'Common',
-          translation: 'Меки',
-          description: '?????',
-          reveal: false,
-        },
-        {
-          id: 9,
-          title: 'Loli',
-          type: 'Rare',
-          translation: 'Лоли',
-          description: 'Не трожь!',
-          reveal: false,
-        },
-      ],
-    })
+    name: 'Cards',
+    data() { 
+      return {
+        cards: [
+          {
+            id: 1,
+            title: 'Kek',
+            type: 'Tech',
+            translation: 'Лол',
+            description: 'Суперсмешной такой вообще совсем очень кекнутный лол',
+            reveal: false,
+          },
+          {
+            id: 2,
+            title: 'Mek',
+            type: 'Common',
+            translation: 'Лол',
+            description: '',
+            reveal: false,
+          },
+          {
+            id: 3,
+            title: 'Lol',
+            type: 'Rare',
+            translation: 'Лол',
+            description: '',
+            reveal: false,
+          },
+          {
+            id: 4,
+            title: 'Kek',
+            type: 'Tech',
+            translation: 'Лол',
+            description: '',
+            reveal: false,
+          },
+          {
+            id: 5,
+            title: 'Mek',
+            type: 'Common',
+            translation: 'Лол',
+            description: '',
+            reveal: false,
+          },
+          {
+            id: 6,
+            title: 'Loh',
+            type: 'Rare',
+            translation: 'Лох',
+            description: 'Типичный чувачок с района',
+            reveal: false,
+          },
+          {
+            id: 7,
+            title: 'Keki',
+            type: 'Tech',
+            translation: 'Кеки',
+            description: 'Many keks',
+            reveal: false,
+          },
+          {
+            id: 8,
+            title: 'Meki',
+            type: 'Common',
+            translation: 'Меки',
+            description: '?????',
+            reveal: false,
+          },
+          {
+            id: 9,
+            title: 'Loli',
+            type: 'Rare',
+            translation: 'Лоли',
+            description: 'Не трожь!',
+            reveal: false,
+          },
+        ],
+      }
+    },
+    methods: {
+
+      cardClick(id) {
+        console.log('id ', id)
+        let card = this.cards.filter(card => card.id === id)[0]
+        card.reveal = !card.reveal
+      },
+
+      editCard(id) {
+        console.log('id edit', id)
+      },
+
+      deleteCard(id) {
+        this.cards = this.cards.filter(card => card.id !== id)
+        console.log('id deleted', id)
+      }
+    },
+
   }
 </script>
 
